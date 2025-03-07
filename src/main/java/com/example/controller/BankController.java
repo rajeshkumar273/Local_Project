@@ -24,7 +24,8 @@ public class BankController {
 	
 	Logger logger= LoggerFactory.getLogger(BankController.class);
 
-	//Log in functionality
+	
+	// Login fuctionality 
 	@PostMapping("/bank/login")
 	public ResponseEntity<String> userRegistration(@RequestBody BankCustomer customerDetails) {
 		

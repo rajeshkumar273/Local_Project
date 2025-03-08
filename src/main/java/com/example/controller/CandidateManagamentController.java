@@ -16,7 +16,8 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 public class CandidateManagamentController {
 	
 	private String hostname;
-
+	
+	//Candidate login
 	@PostMapping(path = "/candidate/login")
 	public ResponseEntity<String> candidateLogin(@RequestBody CandidateDto candidateData ,
 			@RequestHeader(name="hostname") String hostname) {
